@@ -42,7 +42,7 @@ class Result extends StatelessWidget {
               margin: EdgeInsets.all(20),
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Colors.black12,
+                color: Colors.blue.shade900,
                 border: Border.all(width: 5, color: Colors.redAccent),
                 borderRadius: BorderRadius.all(Radius.circular(30)),
               ),

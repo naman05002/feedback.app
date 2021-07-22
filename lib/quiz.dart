@@ -22,6 +22,7 @@ class Quiz extends StatelessWidget {
           children: [
             SizedBox(height: 150),
             Question(questions[index]),
+            SizedBox(height: 30),
             Answer(
               setFeedbackValue: setFeedbackValue,
               initValue: initFeedbackValue,

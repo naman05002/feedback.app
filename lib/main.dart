@@ -40,12 +40,14 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'BalsamiqSans'),
       home: Scaffold(
           body: index < 5
               ? Quiz(answerQuestion, questions, index)
               : Center(
                   child: Result(resultScore, resetApp),
                 )),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
