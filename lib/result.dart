@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class Result extends StatelessWidget {
   final List<Map<String, dynamic>> result = [
     {
-      "text": 'We are sorry for your inconvenience',
+      "text": 'We are sorry for your inconvenience.',
       "color": Colors.red,
     },
-    {"text": 'Hope we serve you better next time', "color": Colors.yellow},
+    {"text": 'Hope we serve you better next time.', "color": Colors.yellow},
     {
-      "text": 'We hope you come back next time',
+      "text": 'We hope you come back next time.',
       "color": Colors.green,
     },
   ];
@@ -27,10 +27,17 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.cyan.shade100,
       appBar: AppBar(
-        title: Text('Thank you for your feedback!'),
+        title: Text(
+          'Thank you for your feedback!',
+          style: TextStyle(
+            color: Colors.teal[900],
+            fontWeight: FontWeight.w500,
+          ),
+        ),
         centerTitle: true,
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blue.shade200,
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
@@ -42,8 +49,8 @@ class Result extends StatelessWidget {
               margin: EdgeInsets.all(20),
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Colors.blue.shade900,
-                border: Border.all(width: 5, color: Colors.redAccent),
+                color: Colors.cyan.shade900,
+                border: Border.all(width: 5, color: Colors.cyan.shade400),
                 borderRadius: BorderRadius.all(Radius.circular(30)),
               ),
               child: Text(

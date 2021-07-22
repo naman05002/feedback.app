@@ -42,6 +42,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'BalsamiqSans'),
       home: Scaffold(
+          backgroundColor: Colors.cyan.shade100,
           body: index < 5
               ? Quiz(answerQuestion, questions, index)
               : Center(

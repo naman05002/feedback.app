@@ -39,6 +39,8 @@ class _AnswerState extends State<Answer> {
           max: 5,
           divisions: 4,
           label: sliderLabel[value - 1],
+          activeColor: Colors.cyan[700],
+          inactiveColor: Colors.cyan[200],
         )
       ],
     );
